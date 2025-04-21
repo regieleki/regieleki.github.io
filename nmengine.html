@@ -32,10 +32,17 @@
 						<div class="inner">
 							<h1 class="major">nmengine- bespoke, miniature game engine</h1>
 
-							<h1 class="minor">week 2 custom feature progress report</h1>
+							<h2 class="minor">week 2 custom feature progress report</h2>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/LplFYnhp1Hs?si=ZOxy8OY0hFbIzUcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<p>A lot of the second week's feature progress was dedicated to shifting the server out of the game engine itself, and into a standalone nodejs server. This, in turn, required a change of serialization. Data is now sent through JSON format rather than direct
               byte (de)serialization. The largest issue of not being able to see synced-up clients was also fixed, demonstrating very basic network connectivity.</p>
+							<br>
+							<br>
+							<h2 class="minor">week 1 custom feature progress report</h2>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/o3ei6XrtO5s?si=wcqeFX1HQki0ol6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<p>For my engine's custom feature, I wanted to see if I could attempt basic networking capabilities over the span of two weeks. Much of the first week was dedicated to learning the ins and outs of SDL_Net (used due to the already existing use of SDL_Image/Audio/Text, 
+							and building up from there. My engine served both as the server and client, with the command line args dictating the way it would run. I was not able to successfuly get client screen sync to work, but through debug logs, was assured that I was successfully serializing and deserializing
+							data between the server and the client(s).</p>
 						</div>
 					</section>
 
