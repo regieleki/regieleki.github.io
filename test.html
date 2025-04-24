@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Art Gallery - Integrated</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        /* art gallery page */
+
+        .artgallerywindow {
+            background: transparent url(../img/artgallerypngborder.png) center top no-repeat;
+            background-size: 100%;
+            padding-bottom: 3%;
+            height: 100px;
+        }
+
+        #artgal p {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">Hyperspace</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html" class="active">Generic</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Art Gallery</h1>
+
+                <div id="artgal" class="container my-sm-3 my-4">
+                    <div class="artgallery-desktop-view">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img class="img-fluid" src="img/artgalleryhead.svg" style="position: relative; bottom:-5px" alt="Art gallery header.">
+                            </div>
+                            <div class="col-sm-6 text-center artgallerywindow">
+                                <p>Art pieces from the last few years, primarily personal work,
+                                    but there are some school projects as well. Click the thumbnail to enlarge!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artgallery-mobile-view">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img class="img-fluid" src="img/artgalleryhead.svg" style="position: relative; bottom:-5px" alt="Art gallery header.">
+                            </div>
+                            <div class="col-sm-6 text-center artgallerywindow">
+                                <p>Art pieces from the last few years, primarily personal work,
+                                    but there are some school projects as well. Click the thumbnail to enlarge!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div id="modal" class="container portfolio">
+                    <div class="row text-center">
+                        <!-- Thumbnails -->
+                        <div class="col-sm-4">
+                            <a href="#modal1" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/ttrpgicon.png" alt="TTRPG art preview.">
+                                <h5 class="mt-1">Umich TTRPG Club Work</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#modal2" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/artfightart1icon.png" alt="Personal art preview.">
+                                <h5 class="mt-1">Personal Work</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#modal3" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/artfightart2icon.png" alt="Personal art preview">
+                                <h5 class="mt-1">Personal Work</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#modal4" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/artfinalicon.png" alt="ARTDES Midterm preview">
+                                <h5 class="mt-1">ARTDES 115 Midterm</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#modal5" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/artdescomicicon.png" alt="ARTDES final preview">
+                                <h5 class="mt-1">ARTDES 115 Final</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#modal6" data-bs-toggle="modal">
+                                <img class="img-fluid w-100" src="img/personalartworkicon.png" alt="Personal art preview.">
+                                <h5 class="mt-1">Personal Work</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modals -->
+                <!-- Copy your modal 1 to modal 6 code here -->
+                <!-- Example for modal 1 -->
+                <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header justify-content-end border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-inner">
+                                    <div class="container">
+                                        <div class="row justify-content-center align-items-start">
+                                            <div class="col-sm-9">
+                                                <img class="img-fluid w-100 mb-3" src="img/ttrpgart.png" alt="Art of an elven woman from a D&D game.">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h3>TTRPG Club Artwork</h3>
+                                                <p>One of (many) art pieces done for my group at the Umich TTRPG (Tabletop RPG) club. 
+                                                    This is a passion project rather than an assignment or commissioned work. Drawn in Procreate using
+                                                    an iPad Air, 5th generation. Done as an exercise in digital painting. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-auto text-center">
+                                            <a href="#" class="back" data-bs-dismiss="modal">Back to Work</a>
+                                        </div>
+                                        <div class="col-sm-auto text-center">
+                                            <a class="prev" href="#modal6" data-bs-toggle="modal">Prev</a> &nbsp; /&nbsp;
+                                            <a class="next" href="#modal2" data-bs-toggle="modal">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for modals 2 through 6 -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
