@@ -32,13 +32,33 @@
 						<div class="inner">
 							<h1 class="major">nmengine- bespoke, miniature game engine</h1>
 
-							<h2 class="minor">week 2 custom feature progress report</h2>
+							<h2 class="minor">nmengine: final project for eecs498</h2>
+							<p>Created over the span of my Winter 2025 semester at the University of Michigan, NMEngine is a miniature game engine iterated from a simple terminal-based text adventure to a fully-fledged game engine.
+							Notable features include:</p>
+							<ul>
+							  <li>Box2D Physics</li>
+							  <li>SDL Image/Text/Audio libraries</li>
+							  <li>Particle system</li>
+							  <li>Lua connection, C++ backend</li>
+							</ul>
+							<p>As well as the self-directed addition of basic multiplayer networking with a small nodejs server, utilizing SDL_Net, and JSON parsing.</p>
+							<p></p>
+							<p>This engine works on Windows, macOS and Linux, and is robust in its game making capabilities. </p>
+<br>
+							<br>
+							
+							<h2 class="minor">custom feature progress reports</h2>
+							<p>We were tasked with documenting our engine's custom feature-- my own being basic network connectivity. If you're interested in how I achieved this, 
+							these are the week 1 and 2 progress report videos!</p>
+							<br>
+
+			
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/LplFYnhp1Hs?si=ZOxy8OY0hFbIzUcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<p>A lot of the second week's feature progress was dedicated to shifting the server out of the game engine itself, and into a standalone nodejs server. This, in turn, required a change of serialization. Data is now sent through JSON format rather than direct
               byte (de)serialization. The largest issue of not being able to see synced-up clients was also fixed, demonstrating very basic network connectivity.</p>
 							<br>
 							<br>
-							<h2 class="minor">week 1 custom feature progress report</h2>
+							
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/o3ei6XrtO5s?si=wcqeFX1HQki0ol6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<p>For my engine's custom feature, I wanted to see if I could attempt basic networking capabilities over the span of two weeks. Much of the first week was dedicated to learning the ins and outs of SDL_Net (used due to the already existing use of SDL_Image/Audio/Text, 
 							and building up from there. My engine served both as the server and client, with the command line args dictating the way it would run. I was not able to successfuly get client screen sync to work, but through debug logs, was assured that I was successfully serializing and deserializing
