@@ -1,0 +1,53 @@
+.zelda-content {
+  display: flex;
+  align-items: flex-start; /* Top-aligns content */
+  gap: 2em;                /* Creates space between columns */
+}
+
+.zelda-main {
+  flex: 2 1 0;
+  min-width: 0; /* Allows shrinking in flexbox */
+}
+
+.zelda-image {
+  flex: 1 1 200px; /* Ensures image stays at a reasonable width */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-width: 200px;
+}
+
+.zelda-image img {
+  max-width: 220px;
+  height: auto;
+  box-shadow: 0 2px 8px #0001;
+  /* Add more styling if you want */
+}
+
+@media (max-width: 800px) {
+  .zelda-content {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .zelda-image {
+    justify-content: flex-start;
+    min-width: unset;
+  }
+}
+
+<div class="zelda-content">
+  <div class="zelda-main">
+    <h2>NES Zelda Remake & Custom Level</h2>
+    <iframe frameborder="0" src="https://itch.io/embed/2995093" width="552" height="167"><a href="https://regigigas.itch.io/p1zelda">P1- Zelda Remake & Custom Level by regigigas</a></iframe>
+    <p>
+      Controls: WASD or arrow keys. Z/X to use weapon. Space to switch between alt weapons. "4" for the custom level.
+      <br>
+      This was our first project in EECS 494. Made with C# in Unity. Along with my partner, we recreated the first dungeon of Zelda NES,
+      and then created a custom level with a new laser mechanic. I implemented much of the environment, camera functionality...
+    </p>
+  </div>
+  <div class="zelda-image">
+    <img src="images/marmarticle_system.gif" alt="Custom Zelda level" style="max-width:100%; height:auto;">
+  </div>
+</div>
